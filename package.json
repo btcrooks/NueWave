@@ -1,0 +1,31 @@
+{
+  "name": "nuewave-css",
+  "version": "1.0.0",
+  "description": "A lightweight, semantic CSS framework for Nue, built with Tailwind’s Preflight reset. Designed for simplicity and performance, NueWave provides a minimal base and reusable components to style Nue templates and islands.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "mkdir -p dist && cp src/*.css dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/btcrooks/NueWave.git"
+  },
+  "keywords": [
+    "nue",
+    "nuejs",
+    "nuewave",
+    "css",
+    "nuewave-css",
+    "framework",
+    "lightweight",
+    "tailwind",
+    "preflight"
+  ],
+  "author": "Brandon Crooks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btcrooks/NueWave/issues"
+  },
+  "homepage": "https://github.com/btcrooks/NueWave#readme"
+}

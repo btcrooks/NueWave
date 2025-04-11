@@ -1,0 +1,67 @@
+@layer components {
+  .nw-button {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+  }
+  .nw-button:hover {
+    background: color-mix(in srgb, var(--primary) 80%, black);
+  }
+  .nw-button:active {
+    transform: scale(0.98);
+  }
+  .nw-button--sm {
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 0.875rem;
+  }
+  .nw-button--outline {
+    background: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+  }
+  .nw-button--outline:hover {
+    background: color-mix(in srgb, var(--primary) 10%, transparent);
+  }
+  .nw-card {
+    padding: var(--space-md);
+    background: var(--background);
+    border: 1px solid color-mix(in srgb, var(--secondary) 20%, transparent);
+    border-radius: 0.5rem;
+  }
+  @media (min-width: 768px) {
+    .nw-card {
+      padding: var(--space-lg);
+    }
+  }
+  .nw-input {
+    padding: var(--space-sm);
+    border: 1px solid var(--secondary);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+  }
+  .nw-input:focus {
+    border-color: var(--primary);
+  }
+  .nw-grid {
+    display: grid;
+    gap: var(--space-md);
+  }
+  .nw-grid--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nw-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 640px) {
+    .nw-grid--2,
+    .nw-grid--3 {
+      grid-template-columns: 1fr;
+    }
+  }
+}
